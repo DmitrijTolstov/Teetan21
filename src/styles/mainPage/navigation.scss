@@ -1,0 +1,59 @@
+@import '../variables';
+
+.mainPage{
+
+    &-navigation{
+
+        &_links{
+            display: flex;
+            align-items: center;
+            gap: 54px;
+        }
+
+        &_link{
+                &:not(:last-child,:first-child){
+                    a{
+                        background-image: linear-gradient(to right,white ,$light-blue);
+                        background-repeat: no-repeat;
+                        background-size: 0 3px;
+                        background-position: left bottom;
+                        padding-block-end: 7px;
+                        transition: background-size .5s;
+                        &:hover{
+                            background-size: 100% 3px;
+                        }
+                        
+                       }
+                }
+               
+            &:last-child{
+                margin-left: auto;
+                a{
+                    padding-inline-start: 5px;
+                }
+            }
+            &:first-child{
+                margin-right: auto;
+            }
+            
+        }
+
+    }
+    
+    
+    
+
+}
+
+
+@keyframes underline {
+    
+    from{
+        width: 0;
+    }
+    to{
+        width: 100%;
+    }
+
+
+}

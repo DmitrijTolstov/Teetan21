@@ -1,0 +1,97 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	border: none;
+	color: white;
+	font-size:$link
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body{
+	font-size: $main-fonts;
+	font-family: 'inter', serif;
+}
+
+/* Links */
+
+a, a:link, a:visited  {
+    text-decoration: none;
+	font-size:$link
+}
+
+a:hover  {
+    text-decoration: none;
+}
+
+/* Common */
+
+aside, nav, footer, header, section, main {
+	display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	font-family: 'poppinsregular', serif;
+    font-size: inherit;
+	font-weight: inherit;
+}
+
+ul, ul li {
+	list-style: none;
+	font-size:$link
+}
+
+img {
+	vertical-align: middle;
+}
+
+img, svg {
+	max-width: 100%;
+	height: auto;
+}
+
+/* Form */
+
+input, textarea, button, select {
+	font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+button, input[type="submit"] {
+    display: inline-block;
+    box-shadow: none;
+    background-color: transparent;
+    background: none;
+    cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+    outline: none;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+	font-size:$link
+}
+
+label {
+	cursor: pointer;
+}
+
+.container{
+	max-width: 1300px;
+	margin: 0 auto;
+	padding-inline: 10px;
+}

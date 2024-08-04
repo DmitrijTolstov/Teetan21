@@ -1,0 +1,60 @@
+@import '../variables.scss';
+
+.mainPage-banner{
+
+    padding-block-end: 92px;
+
+    margin-block-start: 102px;
+    margin-inline: auto;
+
+    max-width: 728px;
+    // margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    &_title{
+        font-size: $title;
+        margin-block-end: 30px;
+    }
+    &_text{
+        font-size: $main-fonts;
+        max-width: 552px;
+    }
+    &-buttons{
+        margin-block-start: 50px;
+        display: flex;
+        gap: 30px;
+        margin-block-end: 102px;
+    }
+    &_button{
+        text-transform: uppercase;
+        @include button(transparent);
+        &__light-blue{
+            @include button($light-blue);
+        }
+    }
+
+    &__scroll{
+        font-size: $link;
+        opacity: .6;
+        margin-block-end: 20px;
+        }
+
+}
+
+@keyframes scroll{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(2px);
+    }
+}
+
+
+
+.wheel{
+    animation: scroll 1s linear infinite;
+}
