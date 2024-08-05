@@ -1,0 +1,78 @@
+
+.about {
+    position: relative;
+    padding-block: 95px;
+    margin-block-end: 120px;
+    &::before{
+        position: absolute;
+        content:'';
+        background-color: $gray-bg;
+        z-index: -1;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 75%;
+    }
+    
+&-content {
+    color: #000;
+    display: flex;
+    gap: 110px;
+    align-items: center;
+    &__text {
+        max-width: 522px;
+    }
+    &__suptitle {
+        color: $light-blue;
+    }
+    &__title {
+        font-size: $sup-title;
+        margin-block: 30px;
+    }
+    &__description {
+        font-family: 'Inter';
+        margin-block-end: 60px;
+    }
+    &__link {
+        text-transform: uppercase;
+    }
+}
+
+&-cards {
+    display: flex;
+    gap: 41px;
+}
+&-card {
+    position: relative;
+    border-left: 3px solid $light-blue ;
+    padding-inline-start: 30px;
+    &::after{
+        position: absolute;
+        content:'';
+        background-color: $gray-bg;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 20%;
+    }
+}
+&-card__title {
+    color: $light-blue;
+    font-size: $title;
+    margin-block-end: 5px;
+}
+&-card__text {
+    font-size: $main-fonts;
+    margin-block-end: 15px;
+}
+}
+
+.number {
+-webkit-text-stroke: 1px $light-blue;
+font-size: 250px;
+position: absolute;
+color: transparent;
+top: 10px;
+left: 130px;
+}
