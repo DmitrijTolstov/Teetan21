@@ -5,6 +5,16 @@
     border: 1px solid $light-blue;
     border-radius: 2px;
     width: 218px;
+    font-family:'larsseit' ;
     padding-block: 14px;
     padding-inline: 27px;
+}
+
+@mixin marker($top, $left: 130px){
+    -webkit-text-stroke: 1px $light-blue;
+    font-size: 250px;
+    position: absolute;
+    color: transparent;
+    top: $top;
+    left: $left
 }

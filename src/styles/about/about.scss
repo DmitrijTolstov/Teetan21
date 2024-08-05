@@ -26,7 +26,7 @@
         color: $light-blue;
     }
     &__title {
-        font-size: $sup-title;
+        font-size: $title;
         margin-block: 30px;
     }
     &__description {
@@ -34,6 +34,10 @@
         margin-block-end: 60px;
     }
     &__link {
+        display: inline-flex;
+        align-items: flex-end;
+        gap: 10px;
+        cursor: pointer;
         text-transform: uppercase;
     }
 }
@@ -68,11 +72,6 @@
 }
 }
 
-.number {
--webkit-text-stroke: 1px $light-blue;
-font-size: 250px;
-position: absolute;
-color: transparent;
-top: 10px;
-left: 130px;
+.marker {
+ @include marker(10px)
 }

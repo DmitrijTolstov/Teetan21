@@ -1,0 +1,80 @@
+.services {
+    padding-block-start: 105px;
+    padding-block-end: 157px;
+    margin-block-start: 190px;
+    background-color: $dark-blue;
+    color: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+&-content {
+    text-align: center;
+    max-width: 630px;
+    margin-block-end: 100px;
+    &__suptitle {
+        color: $light-blue;
+    }
+    &__title {
+        font-size: $title;
+        margin-block: 30px;
+    }
+    &__text {
+        font-size: $main-fonts;
+        font-family: 'Inter';
+    }
+}
+
+&-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+&-card {
+    padding-block: 30px;
+    padding-inline: 30px;
+    &__img {
+    }
+    &__title {
+        font-size: 19px;
+        margin-block-start: 30px;
+        margin-block-end: 20px;
+    }
+    &__text {
+        font-family: 'Inter';
+        line-height: 22px;
+    }
+    &__link {
+        margin-block-start: 30px;
+        display: inline-flex;
+        align-items: flex-end;
+        gap: 10px;
+        cursor: pointer;
+        text-transform: uppercase;
+    }
+    &_help {
+        background-color: $light-blue;
+        padding-block: 30px;
+        padding-inline: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        &__title {
+            font-size: $title;
+            font-weight: 700;
+            line-height: 41px;
+        }
+        &__button {
+            @include button(white);
+            color:#000
+        }
+        
+    }
+}
+.marker {
+    @include marker(-100px)
+}
+}
+
