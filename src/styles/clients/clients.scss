@@ -1,0 +1,62 @@
+.clients {
+    position: relative;
+    margin-block: 148px;
+    &-marker {
+        @include marker(-250px,false,true)
+    }
+    
+    &-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 30px;
+        margin-block-end: 50px;
+        &_description {
+            min-width: 524px;
+        }
+        &_description__suptitle {
+            color: $light-blue;
+            font-family: 'larsseit';
+            text-transform: uppercase;
+        }
+        &_description__title {
+            font-size: $title;
+            margin-block-start: 30px;
+        }
+        &_comments {
+            padding-inline: 28px;
+            padding-block: 40px;
+            background-color: $gray-bg;
+            border-left: 2px solid $light-blue;
+        }
+        &__comment {
+            font-size: 20px;
+            font-family: 'Inter';
+        }
+    }
+
+    .slider{
+
+        &-arrow{
+            justify-content: flex-start;
+        }
+        &-cards{
+            gap: 40px;
+            img{
+                max-width: none;
+            }
+        }
+        &-card{
+                &-image{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 30px;
+                min-width:180px;
+            }
+        }
+    }
+    
+}
+
+
