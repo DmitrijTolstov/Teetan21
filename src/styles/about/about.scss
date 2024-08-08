@@ -70,8 +70,8 @@
     font-size: $main-fonts;
     margin-block-end: 15px;
 }
+&-marker {
+    @include marker(10px,true,false)
+   }
 }
 
-.marker {
- @include marker(10px)
-}
