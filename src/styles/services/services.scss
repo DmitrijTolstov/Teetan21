@@ -1,6 +1,5 @@
 .services {
     padding-block-start: 105px;
-    padding-block-end: 157px;
     margin-block-start: 190px;
     background-color: $dark-blue;
     color: white;
@@ -10,9 +9,10 @@
     align-items: center;
     
 
-&-content {
+    &-content {
     text-align: center;
     max-width: 630px;
+    margin: 0 auto;
     margin-block-end: 100px;
     &__suptitle {
         color: $light-blue;
@@ -25,18 +25,16 @@
         font-size: $main-fonts;
         font-family: 'Inter';
     }
-}
+        }
 
-&-cards {
+    &-cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
-}
-&-card {
+    }
+    &-card {
     padding-block: 30px;
     padding-inline: 30px;
-    &__img {
-    }
     &__title {
         font-size: 19px;
         margin-block-start: 30px;
@@ -72,9 +70,39 @@
         }
         
     }
+    
 }
+
+&-strategy{
+    background-image: url(@/images/strategy.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-block: 166px 206px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-block-start: 157px;
+
+    &_content{
+        max-width: 806px;
+        text-align: center;
+    }
+    &__suptitle{
+        font-size: $link;
+        text-transform: uppercase;
+    }
+    &__title{   
+        font-size: $title;
+        line-height: 41.6px;
+        margin-block-start: 30px;
+
+    }
+}
+
 .marker {
-    @include marker(-100px)
+    @include marker(-100px,true,false)
 }
+
 }
 
