@@ -1,0 +1,69 @@
+.partners {
+    position: relative;
+    background-color: $gray-bg;
+    padding-block: 80px 116px;
+   
+    &-content{
+        text-align: center;
+        max-width: 620px;
+        margin: 0 auto;
+        &__suptitle {
+            color: $light-blue;
+            text-transform: uppercase;
+            font-family: 'larsseit';
+        }
+        &__title {
+            font-size: $title;
+            margin-block: 30px;
+        }
+        &__text{
+            font-size: $main-fonts;
+            line-height: 23px;
+        }
+
+    }
+    
+   
+    &-cards {
+        margin-block-start: 50px;
+        display: flex;
+        align-items: center;
+        gap: 41px;
+        
+    }
+    &-card {
+        padding-block: 30px;
+        padding-inline: 30px;
+        background-color: white;
+        min-width: 290px;
+        border-radius: 10px;
+        &__image{
+            width: 100%;
+            height: 204px;
+        }
+       &__title {
+        font-size: 18px;
+        margin-block-start: 30px;
+        margin-block-end: 20px;
+        }
+       &-links {
+        margin-block-start: 30px;
+        display: flex;
+        align-items: flex-end;
+        gap: 10px;
+        cursor: pointer;
+        svg{
+            transform: rotate(-45deg);
+        }
+        }
+       &__link {
+        text-transform: uppercase;
+        }
+    }
+    
+
+}
+.marker {
+    @include marker(-100px,false,true)
+}
+
