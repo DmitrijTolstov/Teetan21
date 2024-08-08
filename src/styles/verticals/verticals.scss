@@ -1,0 +1,42 @@
+@import '../slider/slider.scss';
+
+.verticals {
+    margin-block: 108px 140px;
+    position: relative;
+    &-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 40px;
+        margin-inline-start: 80px;
+    }
+    &-content {
+        max-width: 510px;
+       &__suptitle {
+        color: $light-blue;
+        font-family: 'larsseit';
+        color: $light-blue;
+        text-transform: uppercase;
+        }
+       &__title {
+        font-size: $title;
+        margin-block: 30px;
+        }
+       &__text {
+        font-size: $main-fonts;
+
+        &__first{
+            margin-bottom: 15px;
+        }
+        }
+       &_btn {
+        @include button($light-blue);
+        color: white;
+        margin-block-start: 50px;
+        }
+    }
+   &-marker{
+    @include marker(-200px,true,false)
+   }
+}
+
