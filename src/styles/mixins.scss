@@ -8,13 +8,23 @@
     font-family:'larsseit' ;
     padding-block: 14px;
     padding-inline: 27px;
+    text-transform: uppercase;
+    display: inline-block;
+    text-align: center;
 }
 
-@mixin marker($top, $left: 130px){
+@mixin marker($top, $left: false, $right: false){
     -webkit-text-stroke: 1px $light-blue;
     font-size: 250px;
     position: absolute;
     color: transparent;
     top: $top;
-    left: $left
+    
+    @if $left{
+        left: 130px
+    }
+
+    @if $right{
+        right: 70px;
+    }
 }
