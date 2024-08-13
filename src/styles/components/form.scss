@@ -1,0 +1,28 @@
+.form {
+    margin-block-start: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+   
+    &-message {
+        textarea{
+            resize: none;
+            height: 86px;
+        }
+    }
+    &__btn {
+        color: #000;
+        @include button(white)
+    }
+    &_input{
+        border-bottom: 1px solid white;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        font-family: 'larsseit';
+        padding-inline: 12px;
+        padding-block-end: 12px;
+        text-transform: uppercase;
+
+    }
+}
