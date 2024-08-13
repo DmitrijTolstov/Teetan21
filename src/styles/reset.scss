@@ -39,6 +39,12 @@ h1, h2, h3, h4, h5, h6, p {
     font-size: inherit;
 	font-weight: inherit;
 }
+h4{
+	font-family: 'larsseit';
+}
+p{
+	font-family: 'inter';
+}
 
 ul, ul li {
 	list-style: none;
@@ -61,6 +67,7 @@ input, textarea, button, select {
     font-size: inherit;
     color: inherit;
     background-color: transparent;
+	outline: none;
 }
 
 input::-ms-clear {

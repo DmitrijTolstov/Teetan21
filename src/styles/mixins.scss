@@ -19,6 +19,7 @@
     position: absolute;
     color: transparent;
     top: $top;
+    z-index: 10;
     
     @if $left{
         left: 130px
