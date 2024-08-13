@@ -24,6 +24,7 @@
     }
     &__suptitle {
         color: $light-blue;
+        text-transform: uppercase;
     }
     &__title {
         font-size: $title;
@@ -71,7 +72,7 @@
     margin-block-end: 15px;
 }
 &-marker {
-    @include marker(10px,true,false)
+    @include marker(-10px,true,false)
    }
 }
 
