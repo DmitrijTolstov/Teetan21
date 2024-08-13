@@ -1,0 +1,52 @@
+@import '../components/card.scss'; 
+
+.blog {
+    position: relative;
+
+    &-content {
+
+       &__suptitle {
+        color: $light-blue;
+        text-transform: uppercase;
+        }
+    }
+
+    &-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-block: 30px 60px;
+        &__title {
+            font-size: $title;
+            line-height: 41px;
+            max-width: 730px;
+        }
+       &__btn {
+        color: white;
+        @include button($light-blue)
+        }
+    }
+   
+    &-cards {
+        display: flex;
+    }
+    &-card {
+        .card{
+            &-links {
+                svg{
+                    transform: rotate(0deg);
+                    cursor: pointer;
+                }
+            }
+            &__time {
+                margin-inline-start: auto;
+                opacity: .4;
+            }
+
+        }
+    }
+   
+&-marker{
+    @include marker(680px, false, true)
+}
+}

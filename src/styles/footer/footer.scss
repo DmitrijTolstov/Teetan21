@@ -1,0 +1,113 @@
+.footer {
+    background-color: $dark-blue;
+    overflow: hidden;
+    margin-block-start: 180px;
+   &-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 150px;
+    color: white;
+   }
+    &-content {
+        min-width: 400px;
+        font-size: $main-fonts;
+        padding-block: 60px;
+       &__logo {
+        margin-inline-start: -10px;
+        }
+       &__text{
+        line-height: 27px;
+        &__address {
+            margin-block-start: 50px;
+        }
+        }
+       &__address {
+        margin-block-start: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        }
+       &_links {
+        display: flex;
+        gap:20px;
+        margin-block: 50px 75px;
+
+        }
+        &__link {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50px;
+            height: 50px;
+            border: 1px solid white;
+            border-radius: 50%;
+            
+        }
+    }
+   
+    &-form {
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            display: block;
+            width: 100vw;
+            height: 100%;
+            background-image: url('@/images/banner.png');
+            background-color: $footer-shadow;
+            z-index: 1;
+        }
+        &-container{
+            z-index: 10;
+            position: relative;
+            padding-inline-start: 100px;
+        }
+        &__title {
+            margin-block-start: 80px;
+            font-size: $title;
+            margin-block-end: 10px;
+        }
+        &__text {
+            font-size: $main-fonts;
+            line-height: 27px;
+        }
+        .form {
+            margin-block-start: 50px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+           
+            &-message {
+                textarea{
+                    resize: none;
+                    height: 86px;
+                }
+            }
+            &__btn {
+                color: #000;
+                @include button(white)
+            }
+            &_input{
+                border-bottom: 1px solid white;
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+                font-family: 'larsseit';
+                padding-inline: 12px;
+                padding-block-end: 12px;
+                text-transform: uppercase;
+
+            }
+        }
+        &-mask{
+            position: absolute;
+            width: 100vw;
+            height: 100%;
+            background-color: $footer-shadow;
+            z-index: 2;
+        }
+    }
+ 
+}
+

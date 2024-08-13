@@ -9,8 +9,16 @@
 // header;
 
 @import './mainPage/mainPage.scss';
+
+// components
+
 @import './about/about.scss';
 @import './services/services.scss';
 @import './verticals/verticals.scss';
 @import './partners/partners.scss';
 @import './clients/clients.scss';
+@import './blogs/blog.scss';
+
+// footer
+
+@import './footer/footer.scss';
