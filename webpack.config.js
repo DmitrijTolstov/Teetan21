@@ -9,6 +9,7 @@ const CopyPlugin = require("copy-webpack-plugin");
 const ImageMinimizerPlugin = require("image-minimizer-webpack-plugin");
 
 const path = require('path');
+const autoprefixer = require('autoprefixer');
 
 let mode = 'development'
 if (process.env.NODE_ENV === 'production'){
@@ -79,7 +80,8 @@ module:{
                     postcssOptions:{
                       plugins:[
                         [
-                          'postcss-preset-env'
+                          'postcss-preset-env',
+                          'autoprefixer'
                         ]
                       ]
                     }
