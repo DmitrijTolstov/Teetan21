@@ -18,7 +18,12 @@
 @import './partners/partners.scss';
 @import './clients/clients.scss';
 @import './blogs/blog.scss';
+@import './components/burger.scss';
 
 // footer
 
 @import './footer/footer.scss';
+
+// breakpoints
+
+@import '@/styles/breakpoints.scss'
