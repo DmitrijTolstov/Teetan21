@@ -20,7 +20,7 @@
             text-transform: uppercase;
         }
         &_description__title {
-            font-size: $title;
+            font-size: clamp($breakTitle, 5vw,$title);
             margin-block-start: 30px;
         }
         &_comments {
@@ -30,8 +30,9 @@
             border-left: 2px solid $light-blue;
         }
         &__comment {
-            font-size: 20px;
+            font-size: clamp($main-fonts, 3.5vw,20px);
             font-family: 'Inter';
+            line-height: 20px;
         }
     }
 

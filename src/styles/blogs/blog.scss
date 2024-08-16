@@ -17,7 +17,7 @@
         align-items: flex-end;
         margin-block: 30px 60px;
         &__title {
-            font-size: $title;
+            font-size: clamp($breakTitle, 5vw,$title);
             line-height: 41px;
             max-width: 730px;
         }

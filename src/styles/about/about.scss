@@ -20,14 +20,15 @@
     gap: 110px;
     align-items: center;
     &__text {
-        max-width: 522px;
+        max-width: clamp(400px,5vw,100%);
+        margin-inline-end: 10px;
     }
     &__suptitle {
         color: $light-blue;
         text-transform: uppercase;
     }
     &__title {
-        font-size: $title;
+        font-size: clamp($breakTitle, 5vw,$title);
         margin-block: 30px;
     }
     &__description {
@@ -47,7 +48,7 @@
     display: flex;
     gap: 41px;
 }
-&-card {
+&-card,&-card__right {
     position: relative;
     border-left: 3px solid $light-blue ;
     padding-inline-start: 30px;

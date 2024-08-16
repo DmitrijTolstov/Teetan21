@@ -11,7 +11,7 @@
         }
 
         &_link{
-                &:not(:last-child,:first-child){
+                &:not(li:last-child,li:first-child){
                     a{
                         background-image: linear-gradient(to right,white ,$light-blue);
                         background-repeat: no-repeat;

@@ -18,12 +18,13 @@
         color: $light-blue;
     }
     &__title {
-        font-size: $title;
+        font-size: clamp($breakTitle,3.5vw,$title);
         margin-block: 30px;
     }
     &__text {
         font-size: $main-fonts;
         font-family: 'Inter';
+        line-height: 27px;
     }
         }
 
@@ -93,14 +94,14 @@
         text-transform: uppercase;
     }
     &__title{   
-        font-size: $title;
+        font-size: clamp($breakTitle,3.5vw,$title);
         line-height: 41.6px;
         margin-block-start: 30px;
 
     }
 }
 
-.marker {
+&-marker {
     @include marker(-100px,true,false)
 }
 

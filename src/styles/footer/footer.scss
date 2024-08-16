@@ -67,7 +67,7 @@
         }
         &__title {
             margin-block-start: 80px;
-            font-size: $title;
+            font-size: clamp($breakTitle, 3.5vw, $title);
             margin-block-end: 10px;
         }
         &__text {
