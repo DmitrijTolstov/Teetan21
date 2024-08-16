@@ -15,6 +15,7 @@
 body{
 	font-size: $main-fonts;
 	font-family: 'inter', serif;
+	overflow-x: hidden;
 }
 
 /* Links */
@@ -101,4 +102,5 @@ label {
 	max-width: 1300px;
 	margin: 0 auto;
 	padding-inline: 10px;
+	width: 100%;
 }
