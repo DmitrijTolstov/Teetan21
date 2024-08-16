@@ -14,7 +14,10 @@
                 <ul class="mainPage-navigation_links">
                     <li class="mainPage-navigation_link">
                         <a href="#">
-                            <img src="./images/logo.png" alt="logo">
+                            <picture>
+                                <source srcset="./images/logo-mini.png" media="(max-width: 768px)">
+                                <img src="./images/logo.png" alt="logo">
+                            </picture>
                         </a>
                     </li>
                     <li class="mainPage-navigation_link">
@@ -39,7 +42,12 @@
                         <img src="./images/tel.png" alt="telephone">
                         <a href="tel:+91 99714 66668">+91 99714 66668</a>
                     </li>
+                    
                 </ul>
+                <div class="burger">
+                        <span></span>
+                    </div>
+                
             </nav>
         </header>
             <main class="mainPage-banner">
@@ -74,7 +82,7 @@
     </section>
 
     <main class="about">
-        <div class="about-marker">01</div>
+        <div class="about-marker marker">01</div>
         <section class="about-content">
             <figure class="about-content__image">
                 <img src="./images/about.png" alt="картинка собеседования">
@@ -101,7 +109,7 @@
         </section>
     </main>
 
-    <main class="card">
+    <main class="about_card">
         <div class="container">
         <section class="about-cards">
             <div class="about-card">
@@ -118,14 +126,14 @@
                     Quis eu at condimentum amet sed facilisi viverra vulputate. 
                 </p>
             </div>
-            <div class="about-card">
+            <div class=" about-card__right">
                 <h1 class="about-card__title">80+</h1>
                 <p class="about-card__text"><strong>Loyal clients</strong></p>
                 <p class="about-card__text">
                     Quis eu at condimentum amet sed facilisi viverra vulputate. 
                 </p>
             </div>
-            <div class="about-card">
+            <div class=" about-card__right">
                 <h1 class="about-card__title">$2,87M</h1>
                 <p class="about-card__text"><strong>Revenue of our clients</strong></p>
                 <p class="about-card__text">
@@ -138,7 +146,7 @@
 
 
     <main class="services">
-        <div class="marker">02</div>
+        <div class="services-marker marker">02</div>
         <div class="container">
             <section class="services-content">
                 <h4 class="services-content__suptitle">
@@ -259,7 +267,7 @@
     </main>
 
     <main class="verticals">
-        <div class="verticals-marker">03</div>
+        <div class="verticals-marker marker">03</div>
         <div class="verticals-container">
             <div class="verticals-content">
                 <h4 class="verticals-content__suptitle">
@@ -329,7 +337,7 @@
     </main>
 
     <main class="partners">
-    <div class="marker">04</div>
+    <div class="partners-marker marker">04</div>
     <div class="container">
         <section>
         <div class="partners-content">
@@ -417,7 +425,7 @@
     </div>
     </main>
     <main class="clients">
-        <div class="clients-marker">05</div>
+        <div class="clients-marker marker">05</div>
         <div class="container">
             <div class="clients-content">
                 <div class="clients-content_description">
@@ -485,7 +493,7 @@
     </main>
 
     <main class="blog">
-        <div class="blog-marker">06</div>
+        <div class="blog-marker marker">06</div>
         <div class="container">
             <section class="blog-content">
                 <h4 class="blog-content__suptitle">
@@ -626,6 +634,6 @@
         </div>
     </footer>
 
-
+<script src="./index.js"></script>
 </body>
 </html>
