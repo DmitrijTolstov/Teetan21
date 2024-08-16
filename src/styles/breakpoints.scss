@@ -1,0 +1,302 @@
+
+@media (max-width:1280px){
+    
+.partners{
+    &-cards{
+        gap: 20px;
+    }
+}
+
+
+}
+
+
+@media (max-width:1024px){
+
+
+    .about{
+        margin-block-end: 100px;
+        &-content{
+            gap: 50px;
+        }
+    }
+
+
+
+    // partners
+    
+    .partners{
+        &-cards{
+            gap: 40px;
+            display: grid;
+            grid-template-columns: 290px 290px;
+            justify-content: center;
+        }
+    }
+
+    .marker{
+        display: none;
+    }
+    
+
+    // blog
+
+    .blog{
+
+        &-cards{
+            justify-content: space-around;
+        }
+    }
+
+    // card
+
+    .card{
+        &__image{
+            height: auto;
+        }
+    }
+
+
+    //  clients
+
+    .clients{
+        margin-block: 100px;
+    }
+
+
+
+    // footer
+
+
+    .footer{
+        margin-block-start: 100px;
+        &-container{
+            gap:0;
+        }
+        &-form{
+            &-container{
+                padding-inline-start: 20px;
+            }
+        }
+
+    }
+    
+    }
+
+    @media (max-width:768px){
+       
+        .mainPage{
+            &-navigation{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                &_links{
+                    gap:15px;
+                    justify-content: space-between;
+                }
+               &_link{
+                
+                &:not(:last-child,:first-child){
+                    display: none;
+                }
+                &:first-child{
+                    margin-inline-end: 0;
+                }
+                &:last-child{
+                    margin-inline-start: 0;
+                }
+               }
+            }
+            .burger{
+                display: flex;
+            }
+            &-banner{
+                margin-block-start: 50px;
+                &-buttons{
+                    display: block;
+                    margin-block: 50px;
+                    &:first-child{
+                        margin-block-end: 20px;
+                    }
+                }
+                &_button{
+                    &:first-child{
+                        margin-block-end: 20px;
+                    }
+                }
+            }
+        }
+
+        .about{
+            padding-block-end: 50px;
+            &::before{
+                width: 100%;
+            }
+            &-content{
+                &__text{
+                    margin-block-start: 50px;
+                    padding-inline: 20px;
+
+                }
+                &__description{
+                    margin-block-end: 0;
+                }
+            }
+            &-cards{
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                
+            }
+            &-card{
+                margin: 0 auto;
+            }
+        }
+
+
+        .services{
+            margin-block-start: 70px;
+            &-cards{
+                gap: 10px;
+                grid-template-columns:repeat(2,1fr);
+            }
+            &-strategy{
+                padding-block: 60px;
+            }
+        }
+        .verticals{
+            margin-block: 60px;
+            &-container{
+                display: block;
+                margin-inline-start: 0;
+            }
+            &-content{
+                margin: 0 auto;
+                padding-inline: 20px;
+                margin-block-end: 70px;
+            }
+        }
+
+        .slider{
+            margin-inline: 20px;
+            &-arrow{
+                justify-content: start;
+            }
+            .progress{
+                width: 50px;
+            }
+        }
+
+        .partners{
+            &-cards{
+                grid-template-columns: repeat(2,1fr);
+            }
+        }
+
+        .clients{
+            &-content{
+                display: block;
+                &_comments{
+                    margin-block-start: 20px;
+                }
+            }
+            .slider{
+                margin-inline: 0;
+                
+            }
+        }
+
+        .blog{
+            &-container{
+                display: block;
+                &__title{
+                    line-height: 31px;
+                }
+                &__btn{
+                    margin-block-start: 30px;
+                }
+            }
+            &-cards{
+                display: grid;
+                grid-template-columns: repeat(4,1fr);
+                grid-template-rows: repeat(2,1fr);
+            }
+            &-card{
+                grid-column-end: span 2;
+                &:last-child{
+                    grid-column-start: 2;
+                }
+            }
+        }
+        .footer{
+            .container{
+                padding-inline: 0;
+            }
+            &-container{
+                flex-direction: column;
+            }
+            &-form{
+                order: 1;
+                padding-block-end: 60px;
+            }
+            &-content{
+                order: 2;
+            }
+            &-content{
+                margin-inline-start: 20px;
+            }
+        }
+        }
+
+
+    @media (max-width:480px){
+        .about{
+            &-content{
+            display: block;
+            }
+            &-cards{
+                display: block;
+            }
+        }
+        .services{
+            &-cards{
+                gap: 10px;
+                grid-template-columns: 1fr;
+            }
+            &-card{
+                &_help{
+                    &__button{
+                        margin-block-start: 10px;
+                    }
+                }
+            }
+        }
+        .partners{
+            &-cards{
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .clients{
+            &-content{
+                display: block;
+                &_description{
+                    min-width: 100%;
+                }
+            }
+        }
+
+        .blog{
+            
+            &-cards{
+                display: block;
+            }
+        }
+        .footer{
+            &-form{
+                &-container{
+                    padding-inline-end: 20px;
+                }
+            }
+           
+        }
+        }
