@@ -6,27 +6,15 @@ import gsap from 'gsap';
 gsap.registerPlugin(ScrollTrigger) 
 
 let tl = gsap.timeline({
-    // yes, we can add it to an entire timeline!
-    scrollTrigger: {
-        trigger: '.mainPage',
-        pin: true, // pin the trigger element while active
-        start: 'top top', // when the top of the trigger hits the top of the viewport
-        end: '+=500', // end after scrolling 500px beyond the start
-        scrub: 2, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
-        snap: {
-            snapTo: 'labels', // snap to the closest label in the timeline
-            duration: { min: 0.2, max: 3 }, // the snap animation should be at least 0.2 seconds, but no more than 3 seconds (determined by velocity)
-            delay: 1, // wait 0.2 seconds from the last scroll event before doing the snapping
-            ease: 'power1.inOut' // the ease of the snap animation ("power3" by default)
-        }
-    }
 });
 
 
 tl
-    .from('.mainPage-banner_title', { scale: 0.3, rotation: 45, autoAlpha: 0 })
-    .from('.mainPage-banner_text', { scale: 1.5, rotation: 90, autoAlpha: 0 })
-    .from('.mainPage-banner-scrolls svg', { y:1000, autoAlpha: 0, duration:3})
+    .from('.mainPage-banner_title', { scale: 0.3, rotation: 45, autoAlpha: 0, })
+    .from('.mainPage-banner_text', { scale: 1.5, rotation: 90, autoAlpha: 0,  })
+    .from('.mainPage-banner-scrolls svg', { y:1000, autoAlpha: 0})
+
+// about
 
 gsap.from('.about-content__text', {
     scrollTrigger:{
@@ -34,10 +22,8 @@ gsap.from('.about-content__text', {
        toggleActions:'restart none none none'
     }, 
     x: 1000,
-    duration:1,
-    
-});
-    
+    duration:1
+})
 gsap.from('.about-card', 
     { 
          scrollTrigger:{
@@ -49,7 +35,6 @@ gsap.from('.about-card',
 
     }
 )
-
 gsap.from('.about-card__right', 
     { 
        scrollTrigger:{
@@ -61,3 +46,100 @@ gsap.from('.about-card__right',
 
     }
 )
+
+// services
+
+const tl2 = gsap.timeline({
+    scrollTrigger:{
+       trigger: '.services-cards',
+    },
+})
+tl2.from('.services-content__title', 
+    { 
+        x:40,
+        opacity:0
+    }
+)
+   tl2.from('.services-content__text',{
+        x:-40,
+        opacity:0
+    })
+    tl2.from('.services-content__suptitle',{
+        y:40,
+        opacity:0
+    })
+
+
+const tl3 = gsap.timeline({
+        scrollTrigger:{
+            trigger:'.services-strategy__title'
+        },
+})
+
+tl3
+.from('.services-strategy__title',{
+    x:200,
+    opacity:0,
+    duration:1
+})
+
+.from('.services-strategy__suptitle',{
+    rotate:90,
+    opacity:0,
+})
+
+
+// slider
+
+
+
+function Slider(){
+    let sliderWidth = 3200
+    let cardWidth = document.querySelector('.slider-card').clientWidth
+
+    let scrollSliderTransform = sliderWidth - cardWidth
+
+const tlSlider = gsap.timeline({
+    scrollTrigger:{
+        trigger:'.verticals',
+        scrub:4,
+        start:'center center',
+    },
+})
+
+tlSlider
+.to('.slider-card',{
+     x:'-=' + scrollSliderTransform + 'px',
+})
+}
+
+Slider()
+
+
+
+
+// partners animation
+
+
+const tl4 = gsap.timeline({
+    scrollTrigger:{
+        trigger:'.partners-cards',
+    },
+    
+})
+tl4
+.from('.partners-content__suptitle',{
+     opacity:0,
+    rotate:90
+})
+.from('.partners-content__title',{
+     opacity:0,
+    x:-40
+})
+.from('.partners-content__text',{
+     opacity:0,
+    x:40
+})
+
+
+

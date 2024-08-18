@@ -10,16 +10,6 @@
         &_left{
             transform: rotate(180deg);
         }
-       .arrow{
-        opacity: .4;
-        cursor: pointer;
-        &:hover{
-            opacity: 1;
-                path{
-                    stroke: $light-blue;
-                }
-        }
-       }
     }
     &-cards {
         display: flex;
@@ -46,7 +36,7 @@
         position: relative;
         margin-block-start: 40px;
         progress{
-            width: 100%;
+            width: 98.5%;
             height: 5px;
             opacity: .4;
         }
